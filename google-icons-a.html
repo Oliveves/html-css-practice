@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김나연-구글아이콘(Flex)</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        * {margin: 0; padding: 0;}
+        ul,li {margin: 0; padding: 0; list-style:none;}
+        /*a {text-decoration: none;}*/
+        body {background-color: #ddd;}
+
+        ul.icons { position: absolute; top: 50%; left: 50%;
+            background-color: #fff;
+            transform: translate(-50%,-50%); /* x, y */
+            display: flex;            
+            justify-content: space-evenly ;
+            align-items: center;
+            width: 1000px; 
+            height: 120px;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+        } 
+        ul.icons a {display: block; border-radius: 50%; 
+            padding: 30px; background-color:#FF0083;}   
+            span { color: rgba(255,255,255,0.7);   }
+
+        ul.icons a:hover {background-color: #6c073b;  color: yellow; }
+
+        ul.icons li:nth-child(1) {order:10;}
+        ul.icons li:nth-child(2) {order:2;}
+        ul.icons li:nth-child(3) {order:3;}
+        ul.icons li:nth-child(4) {order:4;}
+        ul.icons li:nth-child(5) {order:5;}
+        ul.icons li:nth-child(6) {order:6;}
+        ul.icons li:nth-child(7) {order:7;}
+        ul.icons li:nth-child(8) {order:8;}
+        ul.icons li:nth-child(9) {order:9;}
+        ul.icons li:nth-child(10) {order:1;}
+            
+
+    </style>
+</head>
+<body>
+    <ul class="icons"> 
+        <li><a href="#"><span class="material-icons">&#xe407</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xeb51</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xe40a</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xe850</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xe567</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xe91d</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xe814</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xe2eb</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xe87b</span></a></li>
+        <li><a href="#"><span class="material-icons">&#xe3a7</span></a></li>
+    </ul>
+
+</body>
+</html>
