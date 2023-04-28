@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 *{margin: 0; padding: 0;}
-body {background-color: #ddd;}
+html {height: 100%;}
+body {background-color: #ddd; height: 100%;}
 a {text-decoration: none;}
 .blind {position: absolute; top: 0;left: 0; text-indent: -999999999px;
 width: 0;height: 0;font-size: 0;}
 
-#wrap {width: 1000px; margin: 0 auto; box-shadow: 0 0 20px rgba(0,0,0,0.2)}
+#wrap {width: 1000px; margin: 0 auto; box-shadow: 0 0 20px rgba(0,0,0,0.2); min-height: 100%; background-color: #000;}
 
 #wrap header {width: 1000px; height: 170px; background-color:#000; margin: 0 auto;}
 
 #wrap #contents {width: 1000px; height: auto;
 background-color: #fff; margin: 0 auto; 
-padding: 100px 0 100px 0; ; position: relative;
-}
+padding: 100px 0 100px 0; ; position: relative;}
 
 #contents h2 {position: absolute; top: 50px;left: 100px; font-size: 30px;}
 
@@ -30,7 +30,7 @@ border-collapse: collapse;}
 #contents table tr td img {vertical-align: top;}
 /* ㄴ 표에 이미지 들어가면 수직정렬 틀어지는 걸 해결해주는 거 */
 
-#wrap footer {width: 1000px; height: 70px; 
-    background-color: #000; color: #fff;
-margin: 0 auto; }
+#wrap footer {width: 1000px; height:100px;     position: relative;
+    transform: translatY(-100%); 
+background-color: #000; color: #fff; margin: 0 auto; }
 #wrap footer p {text-align: center; font-size: 12px; padding-top: 25px;}
