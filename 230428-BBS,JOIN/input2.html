@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio, text, password, checkbox, select+option, file, button, submit, reset, image </title>
+</head>
+
+<body>
+    <p>
+        <input type="radio" name="tm" value="병원" checked> 병원
+        <input type="radio" name="tm" value="의사"> 의사
+        <input type="radio" name="tm" value="약사"> 약사
+        <input type="radio" name="tm" value="환자"> 환자
+        <!-- 네임값이 같으면 그 중에서 하나만 선택가능함 -->
+    </p>
+    <p>
+        <input type="checkbox" name="web" value="HTML" checked> HTML
+        <input type="checkbox" name="web" value="CSS"> CSS
+        <input type="checkbox" name="web" value="JS"> JS
+        <input type="checkbox" name="web" value="jQuery"> jQuery
+        <input type="checkbox" name="web" value="Figma"> Figma
+        <!-- 체크박스는 여러개 선택가능 -->
+    </p>
+    <p>
+        <label for="text"> 아이디 : </label>
+        <input type="text" id="text" size="10">
+        <label for="password"> 패스워드 : </label>
+        <input type="password" id="password" size="10">
+    </p>
+    <p>
+        <input type="file">
+    </p>
+    <select>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JS</option>
+        <option value="jQuery">jQuery</option>
+    </select>
+</body>
+
+</html>
