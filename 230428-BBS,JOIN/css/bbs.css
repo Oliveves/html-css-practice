@@ -1,3 +1,25 @@
 @charset "UTF-8";
 
 *{margin: 0; padding: 0;}
+body {background-color: #ddd;}
+a {text-decoration: none;}
+.blind {position: absolute; top: 0;left: 0; text-indent: -999999999px;
+width: 0;height: 0;font-size: 0;}
+
+#contents {width: 1000px; height: auto;
+background-color: #fff; margin: 100px auto; 
+padding: 100px 0 100px 0; box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+#contents table {width: 800px; margin: 0 auto; font-size: 13px;
+border-top: 2px solid #000; border-bottom: 2px solid #3b3a3a;
+border-collapse: collapse;}
+#contents table tr th {height: 31px; background-color: #000;}
+#contents table tr td {height: 31px; border-bottom: 1px solid #acaaaa; text-align: center;}
+#contents table tr td.title {text-align: left; padding-left: 20px;}
+#contents table tr td.title a {color: #333;}
+#contents table tr td.title a:hover {color: #333; text-decoration: underline;}
+
+#contents table tr td.gray {color: #aaa;}
+#contents table tr td img {vertical-align: top;}
+/* ㄴ 표에 이미지 들어가면 수직정렬 틀어지는 걸 해결해주는 거 */
