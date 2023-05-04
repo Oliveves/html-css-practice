@@ -1,21 +1,30 @@
 @charset "UTF-8";
 
 *{margin: 0; padding: 0;}
+ul, li {margin: 0; padding: 0; list-style: none;}
 html {height: 100%;}
-body {background-color: #ddd; height: 100%;}
+body {background-color: #f4a6ba; height: 100%;}
 a {text-decoration: none;}
 .blind {position: absolute; top: 0;left: 0; text-indent: -999999999px;
 width: 0;height: 0;font-size: 0;}
+/* ㄴ display:none 하면 안되는 이유 : 그거는 가렸다가 보여주고 싶을 때 쉽게 변경가능하기 때문. */
 
-#wrap {width: 1000px; margin: 0 auto; box-shadow: 0 0 20px rgba(0,0,0,0.2); min-height: 100%; background-color: #000;}
+#wrap {width: 1000px; margin: 0 auto; box-shadow: 0 0 50px rgba(0,0,0,0.2); 
+    min-height: 100%; background-color: #000;}
 
-#wrap header {width: 1000px; height: 170px; background-color:#000; margin: 0 auto;}
-
+#wrap header {width: 1000px; height: 170px; 
+    margin: 0 auto; position: relative; /* < 기준점 */ }
+    header .menu {width: 608px; height: 35px;
+        position: absolute; bottom: 0; right: 0; font-family: "Exo 2"; }
+    header .menu ul li a {display: block; background-color: #000; color: #fff; float: left; 
+        width: 150px; height: 35px; border-top-right-radius: 10px; border-top-left-radius: 10px;
+        line-height: 35px; text-align: center; margin-left: 2px;}
+    header .menu ul li a:hover, header .menu ul li a:focus {background-color: #f4a6ba; color: #000;}
 #wrap #contents {width: 1000px; height: auto;
 background-color: #fff; margin: 0 auto; 
 padding: 100px 0 100px 0; ; position: relative;}
 
-#contents h2 {position: absolute; top: 50px;left: 100px; font-size: 30px;}
+#contents h2 {position: absolute; top: 50px;left: 100px; font-size: 30px; font-family: "Exo 2";}
 
 #contents table {width: 800px; margin: 0 auto; font-size: 13px;
 border-top: 2px solid #000; border-bottom: 2px solid #3b3a3a;
@@ -24,13 +33,13 @@ border-collapse: collapse;}
 #contents table tr td {height: 31px; border-bottom: 1px solid #acaaaa; text-align: center;}
 #contents table tr td.title {text-align: left; padding-left: 20px;}
 #contents table tr td.title a {color: #333;}
-#contents table tr td.title a:hover {color: #333; text-decoration: underline;}
+#contents table tr td.title a:hover {color: #f00a4f; text-decoration: underline;}
 
 #contents table tr td.gray {color: #aaa;}
 #contents table tr td img {vertical-align: top;}
 /* ㄴ 표에 이미지 들어가면 수직정렬 틀어지는 걸 해결해주는 거 */
 
-#wrap footer {width: 1000px; height:100px;     position: relative;
+#wrap footer {width: 1000px; height:50px;     position: relative;
     transform: translatY(-100%); 
-background-color: #000; color: #fff; margin: 0 auto; }
-#wrap footer p {text-align: center; font-size: 12px; padding-top: 25px;}
+background-color: #000; margin: 0 auto; }
+#wrap footer p {text-align: center; color: #fff; font-size: 12px; padding-top: 15px;}
