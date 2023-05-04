@@ -12,8 +12,9 @@ width: 0;height: 0;font-size: 0;}
 #wrap {width: 1000px; margin: 0 auto; box-shadow: 0 0 50px rgba(0,0,0,0.2); 
     min-height: 100%; background-color: #000;}
 
-#wrap header {width: 1000px; height: 170px; 
-    margin: 0 auto; position: relative; /* < 기준점 */ }
+#wrap header {width: 1000px; height: 170px; background-image: url("../images/bbs/top.png");
+    margin: 0 auto; position: relative; /* < 기준점 */ } 
+    header .logo a img {width: 200px; position: absolute; top: 60px; left: 35px; box-shadow: 0 0 20px rgba(0, 0, 0, .3);}
     header .menu {width: 608px; height: 35px;
         position: absolute; bottom: 0; right: 0; font-family: "Exo 2"; }
     header .menu ul li a {display: block; background-color: #000; color: #fff; float: left; 
