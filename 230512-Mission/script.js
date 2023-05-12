@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $(function(){
     //레이어팝업
     $(".layerPopup").on("click", function(){
@@ -7,4 +9,5 @@ $(function(){
     $(".close").on("click", function(){
         $(".popUp").fadeOut();
     });
+});
 });
