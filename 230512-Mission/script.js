@@ -1,5 +1,3 @@
-$(document).ready(function(){
-
     $(function(){
         //레이어팝업
         $(".layerPopup").on("click", function(){
@@ -10,4 +8,3 @@ $(document).ready(function(){
             $(".popUp").fadeOut();
         });
     });
-});
