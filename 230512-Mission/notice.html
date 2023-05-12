@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김나연 - 공지사항, 첫번째 게시물 클릭시 팝업창</title>
+
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" 
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
     <style>
         * {padding: 0; margin: 0;}
         ul, li {list-style: none; margin: 0; padding: 0;}
@@ -15,8 +21,8 @@
             width: 450px; height: 280px; margin: 30px auto; padding: 15px;
             border: 1px solid #ddd; position: relative;
         }
-        .notice h1 {font-size: 15px; margin: 20px 13px;}
-        .notice h1+a {font-size: 12px; color: #666; position: absolute; right: 20px; top: 36px;}
+        .notice h1 {font-size: 15px; margin: 20px 12px 25px; }
+        .notice h1+a {font-size: 12px; color: #666; position: absolute; right: 20px; top: 40px;}
         .notice h1+a:hover {text-decoration: underline;}
 
         .notice ul {margin: 0 8px 0 8px;}
@@ -24,25 +30,40 @@
         ul li a:hover {text-decoration: underline; color: #09af1a;}
         ul li a strong {padding-right: 5px;}
         ul li span {float: right;}
- 
 
+        /* popUp */
+        .popUp {width: 273px; height: 340px; background: url(./images/pop.jpg)no-repeat; display: none;
+        position: absolute; top: 200px; left: 50%; transform: translate(-50%, -50%); box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);}
+        .popUp a.close {display: block; font-size: 15px; background-color: #ff8eba; border: 3px solid rgba(255, 255, 255, 0.5);
+            color: #fff; border-radius: 50%; text-align: center; 
+            width: 30px; height: 30px; position: absolute; right: 0; margin: 10px; line-height: 30px;}
+        .popUp a.close:hover {background-color: #fff; color: #ff8eba; border: 3px solid rgba(253, 183, 210, 0.5);}
     </style>
+  
 </head>
 
 <body>
-    <div class="notice">
-            <h1>반갑다! 쇼핑뉴스</h1>
-            <a href="#">더보기</a>
-        <ul>
-            <li><a href="#"><strong>클라우드백</strong>백게이밍의자 15% 할인 이벤트</a><span>23-05-12</span></li>
-            <li><a href="#"><strong>니은기억</strong>휴가철 사진인화 액자제작95%↓</a><span>23-05-12</span></li>
-            <li><a href="#"><strong>미니멀피어싱</strong>예쁜 14K 피어싱 최대 74% 세일!</a><span>23-05-12</span></li>
-            <li><a href="#"><strong>모어플러스몰</strong>한결편한반려동물 목욕욕조10%↓</a><span>23-05-12</span></li>
-            <li><a href="#"><strong>넬리공식몰</strong>귀여운 드라이어 양모 울볼 12%↓</a><span>23-05-12</span></li>
-            <li><a href="#"><strong>비스토어</strong>은은히 오래가는 방향제 69% SALE</a><span>23-05-12</span></li>
-            <li><a href="#"><strong>다다재</strong>무료배송 60%할인 나만의 예쁜밥상</a><span>23-05-12</span></li>
-        </ul>
+    <div id="wrap">
+        <div class="notice">
+                <h1>반갑다! 쇼핑뉴스</h1>
+                <a href="#">더보기</a>
+            <ul>
+                <li><a href="#" class="layerPopup"><strong>클라우드백</strong>백게이밍의자 15% 할인 이벤트</a><span>23-05-12</span></li>
+                <li><a href="#"><strong>니은기억</strong>휴가철 사진인화 액자제작95%↓</a><span>23-05-12</span></li>
+                <li><a href="#"><strong>미니멀피어싱</strong>예쁜 14K 피어싱 최대 74% 세일!</a><span>23-05-12</span></li>
+                <li><a href="#"><strong>모어플러스몰</strong>한결편한반려동물 목욕욕조10%↓</a><span>23-05-12</span></li>
+                <li><a href="#"><strong>넬리공식몰</strong>귀여운 드라이어 양모 울볼 12%↓</a><span>23-05-12</span></li>
+                <li><a href="#"><strong>비스토어</strong>은은히 오래가는 방향제 69% SALE</a><span>23-05-12</span></li>
+                <li><a href="#"><strong>다다재</strong>무료배송 60%할인 나만의 예쁜밥상</a><span>23-05-12</span></li>
+            </ul>
+        </div> 
+        
+        <div class="popUp">
+            <a href="#" class="close"><i class="xi-close"></i></a>
+        </div>
+
     </div>
+
 </body>
 
 </html>
