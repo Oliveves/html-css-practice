@@ -58,7 +58,7 @@ nav.tnb ul li:last-child a:focus {
 ========================================================== */
 
 #wrap section.main {
-    width: 100%; height: 1000px;
+    width: 100%; height: 100vh;
     background: url("../images/vis_1.jpg")no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
