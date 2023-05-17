@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Noto+Sans+KR');
+
+*{margin: 0; padding: 0;}
+
+/* font지정하지 않을 시 웹브라우저의 100% 폰트사이즈는 16px=1em */
+body {font-size: 14px; font-family: 'noto sans KR', 'sans-serif';}
+
+ul, li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration:none; color: inherit;}
+h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
+a img {border: none;}
+
+/* =======================================================
+    header 
+========================================================== */
+
+#wrap header {
+    width: 100%; height: 100px; line-height: 100px; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,.2); z-index: 2;
+}
+
+#wrap header .innerHeader {width: 1400px; height: 100%; margin: 0 auto; }
+
+/* 로고 */
+
+.innerHeader h1.logo {float: left;}
+.innerHeader h1.logo img {margin-top: 25px; }
+
+/* 중앙메뉴 */
+
+.innerHeader nav.gnb {float: left; margin-left: 120px;}
+.innerHeader nav.gnb ul li {float: left; margin-right: 80px;}
+.innerHeader nav.gnb ul li a {display: block; font-size: 16px; color: #fff; text-align: center;}
+.innerHeader nav.gnb ul li a:hover, .innerHeader nav.gnb ul li a:focus {color: #ff8342;}
+
+/* 오른쪽메뉴 */
+
+.innerHeader nav.tnb {float: right; margin-right: -24px;}
+.innerHeader nav.tnb ul li {float: left; margin-right: 25px;}
+.innerHeader nav.tnb ul li a {display: block; font-size: 16px; color: #fff; text-align: center;}
+.innerHeader nav.tnb ul li a:hover, .innerHeader nav.tnb ul li a:focus {color: #ff8342;}
+
+/* 제품검색버튼 */
+
+nav.tnb ul li:nth-child(1) a i, 
+nav.tnb ul li:nth-child(2) a i {font-size: 20px; margin-right: 5px; }
+nav.tnb ul li:last-child a {display: block; border-radius: 16px; width: 130px; height: 32px; line-height: 32px;
+border: 1px solid #fff; transition: .3s; /* 꼭 트랜지션은 a에다 넣기 */ margin-top: 33px;}
+
+nav.tnb ul li:last-child a:hover,
+nav.tnb ul li:last-child a:focus {
+    background-color: #fff; color: #ff8342;
+}
+
+/* =======================================================
+    1. main 
+========================================================== */
+
+#wrap section.main {
+    width: 100%; height: 1000px;
+    background: url("../images/vis_1.jpg")no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    min-width: 1400px; /* 모바일에서 볼때 오류방지 */
+}
+
+/* main text */
+#wrap section.main .mainTitle {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    /* = margin-left : -250px; */
+    color: #fff; text-align: center;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+.mainTitle h2 {font-size: 47px; margin-bottom: 20px; font-weight: normal; /* h2굵기속성해제 */}
+.mainTitle p {font-size: 25px; margin: 50px 0 30px;}
+
+/* view more 버튼 */
+.mainTitle a.view {
+    display: block; width: 180px; padding: 8px 0; font-size: 16px; margin: 0 auto;
+    border: 2px solid #fff; position: relative; overflow: hidden; border-radius: 40px;
+}
+
+.mainTitle a.view::after {
+    content:''; width: 0; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(255,255,255,.4);
+    transition: .3s;
+} 
+
+.mainTitle a.view:hover::after {width: 100%;}
+.mainTitle a.view:focus::after {background-color: rgba(255,255,255,.4);}
+
+.mainTitle a.view i {margin-left: 5px;}
+
+
+/* =======================================================
+    section title 4ea 
+========================================================== */
+
+.title {font-family: 'Exo 2'; color: #000; text-align: center;}
+.title h2 {font-size: 45px; margin-bottom: 10px; font-weight: normal;}
+.title h2 span {color: #ff8342;}
+.title p {font-size: 18px; color: #555;}
+
+/* =======================================================
+    2. about 
+========================================================== */
+
+#wrap section.about {width: 100%; background-color: #fff; padding: 80px 0; min-width: 1400px;}
+#wrap section.about ul {width: 1400px; margin: 50px auto; overflow: hidden;}
+#wrap section.about ul li {float: left; width: 33.3333%;}
+#wrap section.about ul li a {display: block;}
+#wrap section.about ul li a p.scale {width: 100%; height: 369px; overflow: hidden;}
+#wrap section.about ul li a p.scale img {width: 100%; height: auto; transition: .8s;}
+#wrap section.about ul li a:hover p.scale img {transform: scale(1.2);}
+
+#wrap section.about ul li a .text {padding: 30px;}
+#wrap section.about ul li a .text h3 {font-size: 20px; margin-bottom: 10px;}
+#wrap section.about ul li a .text p {font-size: 16px; margin-bottom: 10px;}
+
+/* MORE 버튼 */
+#wrap section.about ul li a .text p.more {
+    font-weight: bold; padding-left: 40px; position: relative;
+}
+#wrap section.about ul li a .text p.more:hover {
+    color: #333;
+}
+
+/* 화살표 아이콘 */
+.text p.more::before {
+    content: '\f178'; font-family: FontAwesome; color: #fff;
+    width: 30px; height: 30px; line-height: 30px;
+    background-color: #ff8342; border-radius: 50%;
+    position: absolute; left: 0; padding-left: 0.4px;
+}
+
+
+/* =======================================================
+    3. section title 4ea 
+========================================================== */
+
+
+
+/* =======================================================
+    3. innovation 
+========================================================== */
+
+
+
+/* =======================================================
+    4. me (인재채용)
+========================================================== */
+
+
+
+/* =======================================================
+    5. sns
+========================================================== */
+
+
+
+/* =======================================================
+    Footer
+========================================================== */
