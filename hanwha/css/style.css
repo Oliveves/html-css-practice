@@ -35,16 +35,17 @@ a img {border: none;}
 
 /* 오른쪽메뉴 */
 
-#wrap header.innerHeader nav.tnb {float: right; margin-right: -24px;}
-#wrap header.innerHeader nav.tnb ul li {float: left; margin-right: 25px;}
-#wrap header.innerHeader nav.tnb ul li a {display: block; font-size: 16px; color: #fff; text-align: center;}
-#wrap header.innerHeader nav.tnb ul li a:hover, .innerHeader nav.tnb ul li a:focus {color: #ff8342;}
+#wrap header .innerHeader nav.tnb {float: right; margin-right: -24px;}
+#wrap header .innerHeader nav.tnb ul li {float: left; margin-right: 25px;}
+#wrap header .innerHeader nav.tnb ul li a {display: block; font-size: 16px; color: #fff; text-align: center;}
+#wrap header .innerHeader nav.tnb ul li a:hover, .innerHeader nav.tnb ul li a:focus {color: #ff8342;}
 
 /* 제품검색버튼 */
 
-#wrap header.innerHeader nav.tnb ul li:nth-child(1) a i, nav.tnb ul li:nth-child(2) a i {font-size: 20px; margin-right: 5px; }
-#wrap header.innerHeader nav.tnb ul li:last-child a {display: block; border-radius: 16px; width: 130px; height: 32px; line-height: 32px; border: 1px solid #fff; transition: .3s; /* 꼭 트랜지션은 a에다 넣기 */ margin-top: 33px;}
-#wrap header.innerHeader nav.tnb ul li:last-child a:hover, nav.tnb ul li:last-child a:focus {background-color: #fff; color: #ff8342;}
+#wrap header .innerHeader nav.tnb ul li:nth-child(1) a i, #wrap header .innerHeader nav.tnb ul li:nth-child(2) a i {font-size: 20px; margin-right: 5px; }
+#wrap header .innerHeader nav.tnb ul li:last-child a {display: block; border-radius: 16px; width: 130px; height: 32px; line-height: 32px; border: 1px solid #fff; transition: .3s; /* 꼭 트랜지션은 a에다 넣기 */ margin-top: 33px;}
+#wrap header .innerHeader nav.tnb ul li:last-child a:hover, #wrap header .innerHeader nav.tnb ul li:last-child a:focus {background-color: #fff; color: #ff8342;}
+#wrap header .innerHeader nav.tnb ul li:last-child a i {margin-left: 5px;}
 
 
 /* =======================================================
