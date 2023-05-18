@@ -23,28 +23,28 @@ a img {border: none;}
 
 /* 로고 */
 
-.innerHeader h1.logo {float: left;}
-.innerHeader h1.logo img {margin-top: 25px; }
+#wrap header .innerHeader h1.logo {float: left;}
+#wrap header .innerHeader h1.logo img {margin-top: 25px; }
 
 /* 중앙메뉴 */
 
-.innerHeader nav.gnb {float: left; margin-left: 120px;}
-.innerHeader nav.gnb ul li {float: left; margin-right: 80px;}
-.innerHeader nav.gnb ul li a {display: block; font-size: 16px; color: #fff; text-align: center;}
-.innerHeader nav.gnb ul li a:hover, .innerHeader nav.gnb ul li a:focus {color: #ff8342;}
+#wrap header .innerHeader nav.gnb {float: left; margin-left: 120px;}
+#wrap header .innerHeader nav.gnb ul li {float: left; margin-right: 80px;}
+#wrap header .innerHeader nav.gnb ul li a {display: block; font-size: 16px; color: #fff; text-align: center;}
+#wrap header .innerHeader nav.gnb ul li a:hover, .innerHeader nav.gnb ul li a:focus {color: #ff8342;}
 
 /* 오른쪽메뉴 */
 
-.innerHeader nav.tnb {float: right; margin-right: -24px;}
-.innerHeader nav.tnb ul li {float: left; margin-right: 25px;}
-.innerHeader nav.tnb ul li a {display: block; font-size: 16px; color: #fff; text-align: center;}
-.innerHeader nav.tnb ul li a:hover, .innerHeader nav.tnb ul li a:focus {color: #ff8342;}
+#wrap header.innerHeader nav.tnb {float: right; margin-right: -24px;}
+#wrap header.innerHeader nav.tnb ul li {float: left; margin-right: 25px;}
+#wrap header.innerHeader nav.tnb ul li a {display: block; font-size: 16px; color: #fff; text-align: center;}
+#wrap header.innerHeader nav.tnb ul li a:hover, .innerHeader nav.tnb ul li a:focus {color: #ff8342;}
 
 /* 제품검색버튼 */
 
-nav.tnb ul li:nth-child(1) a i, nav.tnb ul li:nth-child(2) a i {font-size: 20px; margin-right: 5px; }
-nav.tnb ul li:last-child a {display: block; border-radius: 16px; width: 130px; height: 32px; line-height: 32px; border: 1px solid #fff; transition: .3s; /* 꼭 트랜지션은 a에다 넣기 */ margin-top: 33px;}
-nav.tnb ul li:last-child a:hover, nav.tnb ul li:last-child a:focus {background-color: #fff; color: #ff8342;}
+#wrap header.innerHeader nav.tnb ul li:nth-child(1) a i, nav.tnb ul li:nth-child(2) a i {font-size: 20px; margin-right: 5px; }
+#wrap header.innerHeader nav.tnb ul li:last-child a {display: block; border-radius: 16px; width: 130px; height: 32px; line-height: 32px; border: 1px solid #fff; transition: .3s; /* 꼭 트랜지션은 a에다 넣기 */ margin-top: 33px;}
+#wrap header.innerHeader nav.tnb ul li:last-child a:hover, nav.tnb ul li:last-child a:focus {background-color: #fff; color: #ff8342;}
 
 
 /* =======================================================
@@ -56,15 +56,15 @@ nav.tnb ul li:last-child a:hover, nav.tnb ul li:last-child a:focus {background-c
 
 /* main text */
 #wrap section.main .mainTitle {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); /* = margin-left : -250px; */ color: #fff; text-align: center; text-shadow: 0 0 5px rgba(0,0,0,.5);}
-.mainTitle h2 {font-size: 47px; margin-bottom: 20px; font-weight: normal; /* h2굵기속성해제 */}
-.mainTitle p {font-size: 25px; margin: 50px 0 30px;}
+#wrap section.main .mainTitle h2 {font-size: 47px; margin-bottom: 20px; font-weight: normal; /* h2굵기속성해제 */}
+#wrap section.main .mainTitle p {font-size: 25px; margin: 50px 0 30px;}
 
 /* view more 버튼 */
-.mainTitle a.view {display: block; width: 180px; padding: 8px 0; font-size: 16px; margin: 0 auto; border: 2px solid #fff; position: relative; overflow: hidden; border-radius: 40px;}
-.mainTitle a.view::after {content:''; width: 0; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(255,255,255,.4); transition: .3s;} 
-.mainTitle a.view:hover::after {width: 100%;}
-.mainTitle a.view:focus::after {background-color: rgba(255,255,255,.4);}
-.mainTitle a.view i {margin-left: 5px;}
+#wrap section.main .mainTitle a.view {display: block; width: 180px; padding: 8px 0; font-size: 16px; margin: 0 auto; border: 2px solid #fff; position: relative; overflow: hidden; border-radius: 40px;}
+#wrap section.main .mainTitle a.view::after {content:''; width: 0; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(255,255,255,.4); transition: .3s;} 
+#wrap section.main .mainTitle a.view:hover::after {width: 100%;}
+#wrap section.main .mainTitle a.view:focus::after {background-color: rgba(255,255,255,.4);}
+#wrap section.main .mainTitle a.view i {margin-left: 5px;}
 
 
 /* =======================================================
@@ -100,7 +100,7 @@ nav.tnb ul li:last-child a:hover, nav.tnb ul li:last-child a:focus {background-c
 #wrap section.about ul li a .text p.more:hover {color: #333;}
 
 /* 화살표 아이콘 */
-.text p.more::before {content: '\f178'; font-family: FontAwesome; color: #fff; width: 30px; height: 30px; line-height: 30px; background-color: #ff8342; border-radius: 50%; position: absolute; left: 0; padding-left: 0.4px;}
+#wrap section.about ul li a .text p.more::before {content: '\f178'; font-family: FontAwesome; color: #fff; width: 30px; height: 30px; line-height: 30px; background-color: #ff8342; border-radius: 50%; position: absolute; left: 0; padding-left: 0.4px;}
 
 
 /* =======================================================
@@ -109,13 +109,13 @@ nav.tnb ul li:last-child a:hover, nav.tnb ul li:last-child a:focus {background-c
 
 #wrap section.innovation {width: 100%; background-color: #fff; min-width: 1400px; margin-bottom: 150px;}
 #wrap section.innovation .imgBox {width: 1400px; height: 540px; background: url("../images/product_1.jpg")no-repeat center/cover; margin: 50px auto; position: relative;}
-.imgBox .inner {position: absolute; left: 50%; bottom: -50px; transform: translateX(-50%); background: #3a3c4e; width: 80%;}
-.imgBox .inner h3 {padding: 25px 45px; background-color: #fff; font-size: 18px; box-sizing: border-box; /* 선과 안쪽여백이 내가 만든 사이즈 안에 포함되게 */ }
-.imgBox .inner h3 span {color: #ff8342;}
-.imgBox .inner .bottom {padding: 35px 85px; color: #fff; line-height: 1.6; box-sizing: border-box; overflow: hidden;}
-.imgBox .inner .bottom p {float: left; margin-left: -5px;}
-.imgBox .inner .bottom a {float: right; background-color: #ff8342; padding: 7px 30px; display: block; border-radius: 50px; transition: .5s;}
-.imgBox .inner .bottom a:hover, .imgBox .inner .bottom a:focus {background-color: #f86010;}
+#wrap section.innovation .imgBox .inner {position: absolute; left: 50%; bottom: -50px; transform: translateX(-50%); background: #3a3c4e; width: 80%;}
+#wrap section.innovation .imgBox .inner h3 {padding: 25px 45px; background-color: #fff; font-size: 18px; box-sizing: border-box; /* 선과 안쪽여백이 내가 만든 사이즈 안에 포함되게 */ }
+#wrap section.innovation .imgBox .inner h3 span {color: #ff8342;}
+#wrap section.innovation .imgBox .inner .bottom {padding: 35px 85px; color: #fff; line-height: 1.6; box-sizing: border-box; overflow: hidden;}
+#wrap section.innovation .imgBox .inner .bottom p {float: left; margin-left: -5px;}
+#wrap section.innovation .imgBox .inner .bottom a {float: right; background-color: #ff8342; padding: 7px 30px; display: block; border-radius: 50px; transition: .5s;}
+#wrap section.innovation .imgBox .inner .bottom a:hover, .imgBox .inner .bottom a:focus {background-color: #f86010;}
 
 
 /* =======================================================
@@ -139,10 +139,10 @@ nav.tnb ul li:last-child a:hover, nav.tnb ul li:last-child a:focus {background-c
 
 /* 상세리스트 - 도전, 헌신, 정도 */
 #wrap section.me .list > ul > li > ul.in {margin-bottom: 30px;}
-ul.in li { margin-bottom: 10px; overflow: hidden;}
-ul.in li em {float: left; width: 12%;}
-ul.in li p {float: left; width: 88%; position: relative;}
-ul.in li p::before {content: ''; position: absolute; top: 10px; left: -40px; width: 4px; height: 4px; background-color: #ff8342;}
+#wrap section.me .list > ul > li > ul.in li { margin-bottom: 10px; overflow: hidden;}
+#wrap section.me .list > ul > li > ul.in li em {float: left; width: 12%;}
+#wrap section.me .list > ul > li > ul.in li p {float: left; width: 88%; position: relative;}
+#wrap section.me .list > ul > li > ul.in li p::before {content: ''; position: absolute; top: 10px; left: -40px; width: 4px; height: 4px; background-color: #ff8342;}
 
 /* 한화인 채용사이트 btn */
 #wrap section.me .button {position: absolute; left: 50%; top: 750px; transform: translateX(-50%);}
