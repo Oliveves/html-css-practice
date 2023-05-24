@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .flex {width: 1200px; height: 300px; 
+            display: flex; 
+            
+        flex-direction: column; 
+        flex-direction: row; 
+        flex-direction: row-reverse; /* 행반전 */
+        }
+        .flex div {height: 300px;}
+        .flex .box1 {background-color: red; flex-basis:10%;}
+        .flex .box2 {background-color: green;flex-basis:70%;}
+        .flex .box3 {background-color: blue;flex-basis:20%;}
+
+    </style>
+</head>
+<body>
+    <!-- .flex>.box$*3 -->
+    <div class="flex">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

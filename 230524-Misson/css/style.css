@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+
+/* reset */
+*{margin: 0; padding: 0;}
+ul,li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit;}
+h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
+
+#wrap {
+    width: 1000px;
+    display: flex;
+}
+
+/* header */
+#wrap header {
+    width: 200px;
+    height: 650px;
+    background-color: #575353;
+}
+
+#wrap header h1.logo {
+    width: 200px;
+    height: 100px;
+    background-color: #a4d3fc;
+}
+
+/* 멀티메뉴 */
+#wrap header nav.menu {
+    width: 200px;
+    height: 550px;
+    background-color: #146C94;
+}
+
+#wrap header nav.menu .mu {
+    width: 200px;
+    height: 200px;
+}
+
+/* 대메뉴 */
+#wrap header nav.menu .mu>ul>li {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;    
+    position: relative;
+}
+
+#wrap header nav.menu .mu>ul>li>a {
+    display: block;
+    background-color: #146C94;
+    border-bottom: 1px solid #174257;
+    height: 50px; line-height: 50px;   
+    text-align: center; font-weight: bold;
+    color: #d7f1fd;
+    font-size: 14px;
+    box-sizing:border-box;
+}
+
+#wrap header nav.menu .submenu {
+    background: rgba(255,255,255,.8);
+    width: 150px;
+    font-size: 14px;
+    height: auto; 
+    top: 0; left: 200px;
+    position: absolute;
+    color: #d7f1fd;
+    display: none;
+}
+
+#wrap header nav.menu .submenu > li {
+    color: #146C94;
+    border-bottom: 1px solid #d3d3d3;
+    height: 30px; line-height: 30px;
+    padding: 10px 20px;
+}
+
+#wrap header nav.menu .submenu > li:hover a {
+    text-decoration: underline;
+} 
+
+#wrap #contents {
+    width: 800px;
+    height: 650px;
+    background-color: #b9b9b9;
+}
+
+#wrap #contents .slide {
+    width: 800px;
+    height: 350px;
+    background-color: #bd8df7;
+}
+
+/* 공지,갤러리,배너 */
+#wrap #contents .ngb {
+    display: flex;
+    width: 800px;
+    height: 200px;
+    background-color: #5e2e98;
+}
+
+#wrap #contents .ngb .notice {
+    width: 267px;
+    height: 200px;
+    background-color: #111;
+}
+
+#wrap #contents .ngb .gallery {
+    width: 266px;
+    height: 200px;
+    background-color: #555;
+}
+
+#wrap #contents .ngb .banner {
+    width: 267px;
+    height: 200px;
+    background-color: #999;
+}
+
+/* footer */
+#wrap #contents footer {
+    width: 800px;
+    height: 100px;
+    background-color: #bd8df7;
+    display: flex;
+}
+
+#wrap #contents footer .blogo {
+    width: 200px;
+    height: 100px;
+    background-color: #9e8ab9;
+}
+
+#wrap #contents footer .copyright {
+    width: 400px;
+    height: 100px;
+    background-color: #7b7b7b;
+}
+
+#wrap #contents footer .fm {
+    width: 200px;
+    height: 100px;
+    background-color: #140d1e;
+}
