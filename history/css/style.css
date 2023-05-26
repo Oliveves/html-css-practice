@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
 
 body {letter-spacing:-1px;}
 #wrap {width: 100%;}
-#wrap #contents {width: 100%; display: flex;}
+#wrap #contents {width: 100%;  height: 750px; display: flex;}
 
 /* 로고 */
 #wrap #contents header {width: 200px;}
@@ -27,7 +27,9 @@ body {letter-spacing:-1px;}
 #wrap #contents header nav.menu > ul > li > ul.submenu > li > a:hover {color: rgba(255,255,255,.8); text-decoration: underline;}
 
 /* 공지사항, 갤러리, 링크 */
-#wrap #contents .ngl {width: 400px;  border-left: 1px solid #d5c7f1;}
+#wrap #contents .ngl {width: 400px; border-left: 1px solid #d5c7f1;}
+#wrap #contents .ngl h2 {font-size: 20px; margin: 0 0 10px 20px; padding-top: 33px;}
+
 
 /* 공지사항 */
 #wrap #contents .ngl .notice {width: 100%; height: 270px; background: #fff;}
@@ -39,11 +41,14 @@ body {letter-spacing:-1px;}
 #wrap #contents .ngl .notice ul span {font-size: 14px; margin-left: 10px; color: #666; float: right;
 }
 
-#wrap #contents .ngl .gallery {width: 100%; height: 300px; background: #3dc96c;}
+#wrap #contents .ngl .gallery {width: 100%; height: 300px; background: #ddd;}
 #wrap #contents .ngl .link {width: 100%; height: 280px; background: #2baa6b;}
 
 /* 슬라이드 */
-#wrap #contents .slide {width: calc(100% - 600px); height: 750px; background: #F5B35A;}
+#wrap #contents .slide {width: calc(100% - 600px); height: 750px; /* position: relative;  */overflow: hidden;}
+#wrap #contents .slide .slideList .slideImg img {display: block; width: 100%; height: 750px;}
+
+
 
 /* 하단로고, 주소, 패밀리사이트 */
 #wrap footer {width: 100%; display: flex; }
