@@ -17,13 +17,17 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
 #wrap header {
     width: 200px;
     height: 650px;
-    background-color: #575353;
 }
 
 #wrap header h1.logo {
     width: 200px;
     height: 100px;
-    background-color: #a4d3fc;
+}
+
+#wrap header h1.logo img {
+    width: 170px;
+    top: 50%; left: 50%;
+    margin: 20px 0 0 20px;
 }
 
 /* 멀티메뉴 */
