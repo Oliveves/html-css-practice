@@ -7,9 +7,9 @@ ul,li {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none; color: inherit;}
 h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
 
-body {letter-spacing:-1px;}
-#wrap {width: 100%;}
-#wrap #contents {width: 100%;  height: 750px; display: flex;}
+body {letter-spacing:-1px; }
+#wrap {width: 100%; }
+#wrap #contents {width: 100%;  height: 750px; display: flex; border-bottom: 1px solid #d5c7f1;}
 
 /* 로고 */
 #wrap #contents header {width: 200px;}
@@ -29,6 +29,7 @@ body {letter-spacing:-1px;}
 /* 공지사항, 갤러리, 링크 */
 #wrap #contents .ngl {width: 400px; border-left: 1px solid #d5c7f1;}
 #wrap #contents .ngl h2 {font-size: 20px; margin: 0 0 10px 20px; padding-top: 33px;}
+#wrap #contents .ngl img:hover {opacity: .7;}
 
 
 /* 공지사항 */
@@ -41,17 +42,35 @@ body {letter-spacing:-1px;}
 #wrap #contents .ngl .notice ul span {font-size: 14px; margin-left: 10px; color: #666; float: right;
 }
 
-#wrap #contents .ngl .gallery {width: 100%; height: 300px; background: #ddd;}
-#wrap #contents .ngl .link {width: 100%; height: 280px; background: #2baa6b;}
+/* 갤러리 */
+#wrap #contents .ngl .gallery {width: 100%; height: 300px; background: #e4e0ee;}
+#wrap #contents .ngl .gallery ul {display: flex; justify-content: space-evenly; margin-top: 15px;}
+#wrap #contents .ngl .gallery ul li img {width: 170px;}
+#wrap #contents .ngl .gallery ul li span {display: block; color: #666; padding-top: 10px; text-align: center; font-size: 13px;}
+
+/* 링크 */
+#wrap #contents .ngl .link {width: 100%; height: 280px;}
+#wrap #contents .ngl .link ul {display: flex; justify-content: space-evenly; margin-top: 45px;}
+#wrap #contents .ngl .link a {text-align: center; display: block;}
+#wrap #contents .ngl .link img {width: 75px;}
+#wrap #contents .ngl .link span {display: block; font-size: 13px;}
+
 
 /* 슬라이드 */
 #wrap #contents .slide {width: calc(100% - 600px); height: 750px; /* position: relative;  */overflow: hidden;}
 #wrap #contents .slide .slideList .slideImg img {display: block; width: 100%; height: 750px;}
 
-
-
 /* 하단로고, 주소, 패밀리사이트 */
-#wrap footer {width: 100%; display: flex; }
-#wrap footer .blogo {width: 20%; height: 100px; background: #eb6082;}
-#wrap footer .copyright {width: 60%; height: 100px; background: #b34d66; }
-#wrap footer .fm {width: 20%; height: 100px; background: #85233c; }
+#wrap footer {width: 100%; display: flex; border-bottom: 1px solid #d5c7f1; box-sizing: border-box;}
+#wrap footer .blogo {width: 20%; height: 100px; background: #ffffff;}
+#wrap footer .blogo img {width: 150px; margin: 33px 0 0 20px; opacity: 0.7;}
+#wrap footer .copyright {width: 60%; height: 100px; background: #ffffff; }
+#wrap footer .copyright p {font-size: 14px; text-align: center; color: #333; margin-top: 40px; letter-spacing: normal;}
+#wrap footer .fm {width: 20%; height: 100px; background: #ffffff; }
+#wrap footer .fm select {width: 200px; margin: 40px 30px 0 0; background: #f0f0f0; float: right;}
+
+/* 팝업 */
+#wrap #popup {background: url("../images/pu.png")no-repeat; position: absolute; left: 50%; top: 400px; transform: translate(-50%, -50%); width: 400px; height: 200px; z-index: 3;  box-shadow: 0 0 15px rgba(0,0,0,0.3); display: none;}
+
+#wrap #popup .close {padding: 6px 11px; margin: 10px; font-size: 13px; text-align: center; border-radius: 5px; background: #6E3DCD; color: #fff; cursor: pointer; position: absolute; right: 0; bottom: 0;  box-shadow: 0 0 3px rgba(0,0,0,0.7);}
+#wrap #popup .close:hover {background: #6840b8;}

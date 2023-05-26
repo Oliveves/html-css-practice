@@ -24,4 +24,12 @@ $(window).on("load", function(){
                 }, 700)
             }
         }, 3000);
+
+//공지사항 팝업        
+    $(".layerpopup").on("click", function(){
+        $("#popup").fadeIn();
+    });
+    $(".close").on("click", function(){
+        $("#popup").fadeOut();
+    });
 });

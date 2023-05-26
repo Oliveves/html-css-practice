@@ -29,10 +29,12 @@ $(window).on("load", function(){
     }, 3000);
 
     //팝업
-    $(".layerpopup").on("click", function(){
+    $(".layerpopup").on("click", function(e){
+        e.preventDefalut();
         $("#popup").fadeIn();
     });
-    $(".close").on("click", function(){
+    $(".close").on("click", function(e){
+        e.preventDefalut();
         $("#popup").fadeOut();
     });
 
