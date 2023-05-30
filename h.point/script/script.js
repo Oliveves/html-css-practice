@@ -24,6 +24,17 @@ $(window).on("load", function(){
     });
 
     // 각 메뉴 클릭시 애니메이션으로 각 컨텐츠에 위치 이동
-    
+    let menu = $(".menu > ul > li");
+    let contents = $("#contents > div");
+
+    menu.click(function(){
+        let tg = $(this);
+        let index = tg.index();
+        let section = contents.eq(index);
+        let top = section.offset().top;
+        $("html, body").stop().animate({
+            scrollTop:top
+        });
+    });
 
 });
