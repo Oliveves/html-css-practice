@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> flex - layout (1200px) - 개별메뉴(3.강원천문대,●7.세계의 미술작품) </title>
+    <title> 김나연 - flex - layout (1200px) - 그룹메뉴,좌우슬라이드(1.just쇼핑몰,●5.대한은행) </title>
     <link rel="stylesheet" href="./css/style.css">    
+
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="./script/script.js"></script>
 </head>
 <body>
-    <!-- #wrap>header+#contents+footer -->
     <div id="wrap">
         <header>
-            <!-- h1.logo+nav.menu -->
             <h1 class="logo"></h1>
             <nav class="menu">
-                <!-- ul>(li>a+ul.submenu>(li>a)*4)*4 -->
                 <ul>
                     <li>
                         <a href="#">소장처별</a>
@@ -56,10 +56,14 @@
             </nav>
         </header>
         <div id="contents">
-            <!-- .slide+.ngb -->
-            <div class="slide"></div>
+            <div class="slide">
+                <div class="slideList">
+                    <div class="slideImg"><a href="#"><img src="./images/bg-feature01.jpg" alt="슬라이드1"></a></div>
+                    <div class="slideImg"><a href="#"><img src="./images/bg-feature02.jpg" alt="슬라이드2"></a></div>
+                    <div class="slideImg"><a href="#"><img src="./images/bg-feature03.jpg" alt="슬라이드3"></a></div>
+                </div>
+            </div>
             <div class="ngb">
-                <!-- .notice+.gallery+.banner -->
                 <div class="notice"></div>
                 <div class="gallery"></div>
                 <div class="banner"></div>
@@ -67,7 +71,6 @@
         </div>
         <footer>
             <div class="bc">
-                <!-- .bmenu+.copyright -->
                 <div class="bmenu"></div>
                 <div class="copyright"></div>
             </div>
