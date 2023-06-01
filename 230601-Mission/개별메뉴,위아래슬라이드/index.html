@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flex - layout (1200px) - 개별메뉴(3.강원천문대,●7.세계의 미술작품) </title>
+    <link rel="stylesheet" href="./css/style.css">    
+</head>
+<body>
+    <!-- #wrap>header+#contents+footer -->
+    <div id="wrap">
+        <header>
+            <!-- h1.logo+nav.menu -->
+            <h1 class="logo"></h1>
+            <nav class="menu">
+                <!-- ul>(li>a+ul.submenu>(li>a)*4)*4 -->
+                <ul>
+                    <li>
+                        <a href="#">소장처별</a>
+                        <ul class="submenu">
+                            <li><a href="#">한국</a></li>
+                            <li><a href="#">프랑스</a></li>
+                            <li><a href="#">이탈리아</a></li>
+                            <li><a href="#">독일</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">장르별</a>
+                        <ul class="submenu">
+                            <li><a href="#">회화</a></li>
+                            <li><a href="#">판화</a></li>
+                            <li><a href="#">공예/고대유물</a></li>
+                            <li><a href="#">그외</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">테마별</a>
+                        <ul class="submenu">
+                            <li><a href="#">초상화/인물</a></li>
+                            <li><a href="#">종교</a></li>
+                            <li><a href="#">신화/문학</a></li>
+                            <li><a href="#">일상/스포츠</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">시대별</a>
+                        <ul class="submenu">
+                            <li><a href="#">1900년 이전</a></li>
+                            <li><a href="#">1900년대</a></li>
+                            <li><a href="#">현대</a></li>
+                            <li><a href="#">그외</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contents">
+            <!-- .slide+.ngb -->
+            <div class="slide"></div>
+            <div class="ngb">
+                <!-- .notice+.gallery+.banner -->
+                <div class="notice"></div>
+                <div class="gallery"></div>
+                <div class="banner"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="bc">
+                <!-- .bmenu+.copyright -->
+                <div class="bmenu"></div>
+                <div class="copyright"></div>
+            </div>
+            <div class="fm"></div>
+        </footer>
+    </div>
+</body>
+</html>

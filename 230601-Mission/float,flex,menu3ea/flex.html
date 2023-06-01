@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flexBox - 컨테이너에 display:flex 속성이 들어감 </title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .flex {display: flex; justify-content:center; flex-direction:row-reverse;  flex-direction:row; } 
+        .flex div:nth-child(1){width: 500px;height: 500px;background-color: red;/* flex-basis:10%; order:2*/} 
+        .flex div:nth-child(2){width: 500px;height: 500px;background-color: blue;/* flex-basis:90%; order:1*/} 
+/* ● 컨테이너에만 들어가는 속성 */
+        /* display: flex;  */
+        /* justify-content:space-evenly; 좌우, 중앙을 똑같은간격 */
+        /* justify-content:space-between; 좌우는 딱 화면에 맞게 배치하고 중간에만 아이템 여백 넣어주기 */
+        /* justify-content:space-around; (좌우가 같은 사이즈의 구조) */
+        /* justify-content:center; (=) margin:0 auto 전체 중앙정렬 */
+        /* flex-direction:row; - 행 (기본) */
+        /* flex-direction:row-reverse;  행 뒤집기 */
+        /* flex-direction:column; - 열 */
+
+/* ● 아이템에만 들어가는 속성 */
+        /*  align-self:center; 지정한 아이템 요소만 수직 중앙정렬 */
+        /*  order:2; 지정한 아이템 순서 잡기 */
+        /*  flex-basis:60%; 각 아이템의 % 잡아주기 */
+    </style>
+</head>
+<body>
+    <!-- .flex>div*2 -->
+    <div class="flex">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
