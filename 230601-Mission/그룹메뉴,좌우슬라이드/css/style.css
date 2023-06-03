@@ -10,7 +10,7 @@ ul,li{margin: 0; padding: 0; list-style:none}
 #wrap header {display: flex;}
 #wrap header h1.logo{width: 300px;height: 100px; background-color: red;}
 
-/* menu-개별메뉴 */
+/* menu-그룹메뉴 */
 #wrap header nav.menu{width: 900px;height: 100px; position: relative; background-color: rgb(38, 16, 237);}
 #wrap header nav.menu > ul {width: 800px; height: 50px; position: absolute; right: 0; top: 25px; background: #d75d5d; display: flex;}
 #wrap header nav.menu > ul > li {width: 200px; height: 50px; }
@@ -21,7 +21,7 @@ ul,li{margin: 0; padding: 0; list-style:none}
 #wrap header nav.menu > ul > li > ul.submenu > li > a {display: block; width: 200px; height: 50px; line-height: 50px; text-align: center; background: #fff;}
 #wrap header nav.menu > ul > li > ul.submenu > li > a:hover {background: #c75151;}
 
-/* 위아래슬라이드 */
+/* 좌우슬라이드 */
 #wrap #contents .slide {height: 300px; background-color: #000; overflow: hidden;}
 #wrap #contents .slide .slideList {display: flex;}
 
