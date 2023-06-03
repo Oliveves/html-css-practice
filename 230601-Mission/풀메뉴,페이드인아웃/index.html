@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 김나연 - flex - layout (1200px) - 풀메뉴,페이드인아웃(3.강원천문대,●7.세계의 미술작품) </title>
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-1.12.3.js"></script>    
+    <script src="./script/script.js"></script>    
 </head>
 <body>
     <!-- #wrap>header+#contents+footer -->
@@ -57,7 +59,13 @@
         </header>
         <div id="contents">
             <!-- .slide+.ngb -->
-            <div class="slide"></div>
+            <div class="slider">
+                <div class="slideList">
+                    <div class="slideImg"><img src="./images/bg-feature01.jpg" alt="슬라이드이미지1"></div>
+                    <div class="slideImg"><img src="./images/bg-feature02.jpg" alt="슬라이드이미지2"></div>
+                    <div class="slideImg"><img src="./images/bg-feature03.jpg" alt="슬라이드이미지3"></div>
+                </div>
+            </div>
             <div class="ngb">
                 <!-- .notice+.gallery+.banner -->
                 <div class="notice"></div>

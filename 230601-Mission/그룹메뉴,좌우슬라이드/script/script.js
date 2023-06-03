@@ -6,7 +6,7 @@ $(window).on("load", function(){
 
     setInterval(function(){
         currentIndex++;
-        $(".slideList").animate({marginLeft : currentIndex * -1000 + "px"}, 600);
+        $(".slideList").animate({marginLeft : currentIndex * -100 + "%"}, 600);
 
         if(currentIndex == 3){
             setTimeout(function(){
