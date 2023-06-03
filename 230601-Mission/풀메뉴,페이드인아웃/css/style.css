@@ -15,7 +15,7 @@ ul,li{margin: 0; padding: 0; list-style:none}
 #wrap header nav.menu > ul {width: 80%; position: absolute; right: 0; top: 50px; display: flex; justify-content: right; background: #4454a4;}
 #wrap header nav.menu > ul > li {width: 25%; height: 50px; text-align: center;}
 #wrap header nav.menu > ul > li:hover {background: #30385c;}
-#wrap header nav.menu > ul > li > a {color: #fff; height: 50px; line-height: 50px; }
+#wrap header nav.menu > ul > li > a {color: #fff; height: 50px; line-height: 50px; font-weight: bold;}
 
 #wrap header nav.menu > ul > li > ul {z-index: 3; width: 25%; height: 200px; position: absolute; }
 #wrap header nav.menu > ul > li > ul > li > a {display: block; height: 40px; line-height: 40px; padding: 5px 0; color: #fff; }
