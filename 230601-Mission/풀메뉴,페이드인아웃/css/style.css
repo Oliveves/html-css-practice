@@ -2,14 +2,26 @@
 
 /* reset */
 *{margin: 0; padding: 0;}
+a {text-decoration: none; color: inherit;}
 ul,li{margin: 0; padding: 0; list-style:none}
 
 *{margin: 0 auto;}
 #wrap {width: 1200px; margin: 0 auto;}
 #wrap header {display: flex;}
-#wrap header h1.logo{width: 300px;height: 100px; background-color: red;}
+#wrap header h1.logo{width: 300px; height: 100px; background-color: red;}
+
 /* menu-개별메뉴 */
-#wrap header nav.menu{width: 900px;height: 100px; background-color: rgb(38, 16, 237);}
+#wrap header nav.menu {width: 900px; height: 100px; background: #283b9d; position: relative; }
+#wrap header nav.menu > ul {width: 80%; position: absolute; right: 0; top: 50px; display: flex; justify-content: right; background: #4454a4;}
+#wrap header nav.menu > ul > li {width: 25%; height: 50px; text-align: center;}
+#wrap header nav.menu > ul > li:hover {background: #30385c;}
+#wrap header nav.menu > ul > li > a {color: #fff; height: 50px; line-height: 50px; }
+
+#wrap header nav.menu > ul > li > ul {z-index: 3; width: 25%; height: 200px; position: absolute; }
+#wrap header nav.menu > ul > li > ul > li > a {display: block; height: 40px; line-height: 40px; padding: 5px 0; color: #fff; }
+#wrap header nav.menu > ul > li > ul > li > a:hover { background: #5a5f7b;}
+
+.background {width: 1200px; height: 200px; background: #000; position: absolute; top: 100px; left: -300px; z-index: 2;}
 
 /* 위아래슬라이드 */
 #wrap #contents .slider {width: 100%; height: 300px; background-color: #000; overflow: hidden;}
