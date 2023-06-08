@@ -14,7 +14,7 @@ header { width: 100%; }
 header nav.navbar { background: #263343; display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; } 
 
 /* 로고 */
-header nav.navbar h1.navbar-logo { font-size: 24px; text-align: center; } 
+header nav.navbar h1.navbar-logo { font-size: 24px; } 
 header nav.navbar h1.navbar-logo i { color: #d49466; } 
 
 /* pc메뉴 */
