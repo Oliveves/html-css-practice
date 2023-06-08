@@ -1,74 +1,56 @@
 @charset "UTF-8";
-
 /* reset */
-:root {
-    --text-color:#f0f4f5;
-}
+:root { --text-color:#f0f4f5; } 
 /* :root - 최상위 엘리먼트, 변수를 할당하여 사용 */
 
-* { margin: 0; padding: 0;} 
+* { margin: 0; padding: 0; } 
 
-body { font-family: 'Baloo Tammudu 2';  color: var(--text-color); } 
+body { font-family: 'Baloo Tammudu 2'; color: var(--text-color); } 
 ul,li { margin: 0; padding: 0; list-style: none; } 
 a { text-decoration: none; color: var(--text-color); } 
 
 /* header - 로고, pc메뉴, mobile메뉴, sns버튼 */
-header {width: 100%;}
-header nav.navbar {background: #263343; display: flex; justify-content: space-between; align-items: center; padding: 8px 12px;}
+header { width: 100%; } 
+header nav.navbar { background: #263343; display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; } 
 
 /* 로고 */
-header nav.navbar h1.navbar-logo {font-size: 24px; }
-header nav.navbar h1.navbar-logo i {color: #d49466;}
+header nav.navbar h1.navbar-logo { font-size: 24px; } 
+header nav.navbar h1.navbar-logo i { color: #d49466; } 
 
 /* pc메뉴 */
-header nav ul.navbar-menu {width: 50%; display: flex; justify-content: space-evenly;}
-header nav ul.navbar-menu li a {padding: 6px 40px 6px 40px; display: block;}
-header nav ul.navbar-menu li a:hover, header nav ul.navbar-menu li a:focus {background: #d49466; border-radius: 50px;}
+header nav ul.navbar-menu { width: 50%; display: flex; justify-content: space-evenly; } 
+header nav ul.navbar-menu li a { padding: 6px 40px 6px 40px; display: block; } 
+header nav ul.navbar-menu li a:hover, header nav ul.navbar-menu li a:focus { background: #d49466; border-radius: 50px; } 
 
 /* sns */
-header nav.navbar ul.navbar-icons {display: flex;}
-header nav.navbar ul.navbar-icons a {display: block;}
-header nav.navbar ul.navbar-icons a i {padding: 8px 12px;}
+header nav.navbar ul.navbar-icons { display: flex; } 
+header nav.navbar ul.navbar-icons a { display: block; } 
+header nav.navbar ul.navbar-icons a i { padding: 8px 12px; } 
 
 header nav.navbar ul.navbar-icons a:hover i.fa-twitter,
 header nav.navbar ul.navbar-icons a:hover i.fa-facebook,
 header nav.navbar ul.navbar-icons a:focus i.fa-twitter,
-header nav.navbar ul.navbar-icons a:focus i.fa-facebook {
-    color: #d49466;
-}
+header nav.navbar ul.navbar-icons a:focus i.fa-facebook { color: #d49466; } 
 
 /* 토글,햄버거버튼 */
-a.navbar-toggleBtn {display: none;}
+a.navbar-toggleBtn { display: none; } 
 
 /* 구글지도 */
-main iframe {
-    width: 100%;
-    height: 94vh;
-}
+main iframe { width: 100%; height: 94vh; } 
 
-@media (max-width:750px){
-    header nav.navbar {flex-direction: column;}
-    
-    header nav.navbar ul.navbar-menu {width: 100%; flex-direction: column; align-items: center; display: none;}
+@media (max-width:750px) { header nav.navbar { flex-direction: column; } 
+ 
+ header nav.navbar ul.navbar-menu { width: 100%; flex-direction: column; align-items: center; display: none; } 
 
-    header nav.navbar ul.navbar-menu li {
-        width: 100%; text-align: center;
-    }
-    
-    header nav.navbar ul.navbar-icons {
-        width: 100%; justify-content: center; display: none;
-    }
-    
-    header nav.navbar a.navbar-toggleBtn {display: block; position: absolute; right: 32px; top: 10px; font-size: 20px;
-    color: #d49466;}
+ header nav.navbar ul.navbar-menu li { width: 100%; text-align: center; } 
+ 
+ header nav.navbar ul.navbar-icons { width: 100%; justify-content: center; display: none; } 
+ 
+ header nav.navbar a.navbar-toggleBtn { display: block; position: absolute; right: 32px; top: 10px; font-size: 20px; color: #d49466; } 
 
 
-    header nav.navbar ul.navbar-menu.active {
-        display: flex;
-    }
-    
-    header nav.navbar ul.navbar-icons.active {
-        display: flex;
-    }
-}
+ header nav.navbar ul.navbar-menu.active { display: flex; } 
+ 
+ header nav.navbar ul.navbar-icons.active { display: flex; } 
+ }
 
