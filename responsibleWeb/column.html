@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 2.columnDrop - 가로 좁아짐에 따라 수직패턴</title>
+    <style>
+        *{margin: 0; padding: 0;}
+  
+ /* mobile */
+        header {width: 100%; height: 50px; background-color: #123;}
+        main .slide {width: 100%; height: 700px; background-color: #949494;}
+        main .con1 {width: 100%; height: 700px; background-color: #c2bfbf;}
+        main .con2 {width: 100%; height: 700px; background-color: #8b8b8b;}
+        footer {width: 100%; height: 50px; background-color:rgb(68, 81, 94);}
+        
+/* tablet */
+@media (min-width:741px){
+    main .slide {height: 500px;}
+    main .con1 {height: 500px;}
+    main .con2 {height: 500px;}
+}
+/* pc */
+@media (min-width:1024px){
+    main:after {
+        content:""; display: block; clear:both;
+    }
+    main .slide {width: 30%; height: 1000px; float: left;}
+    main .con1 {width: 70%; height: 1000px; float: left;}
+    main .con2 {width: 100%; height: 500px; float: left; }
+
+}
+/* wide */
+@media (min-width:1280px) {
+    main .slide {width: 20%; height: 800px;}
+    main .con1 {width: 60%; height: 800px;}
+    main .con2   {width: 20%; height: 800px;}
+}
+    </style>
+</head>
+<body>
+    <!-- header+main+footer -->
+    <header></header>
+    <main>
+        <!-- .slide+.con1+.con2 -->
+        <div class="slide"></div>
+        <div class="con1"></div>
+        <div class="con2"></div>
+    </main>
+    <footer></footer> 
+</body>
+</html>

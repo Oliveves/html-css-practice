@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3.layoutShifter - 풀구조에서 좌우구조로 바뀌는 패턴</title>
+    <style>
+        *{margin: 0; padding: 0;}
+ /* mobile */
+ header {width: 100%; height: 50px; background-color: #123;}
+        main .slide {width: 100%; height: 700px; background-color: #949494;}
+        main .contents .con1 {width: 100%; height: 700px; background-color: #c2bfbf;}
+        main .contents .con2 {width: 100%; height: 700px; background-color: #8b8b8b;}
+        footer {width: 100%; height: 50px; background-color:rgb(68, 81, 94);}
+/* tablet  */
+@media (min-width:741px){
+        main .slide {height: 200px;}
+        main .contents .con2 {height: 500px;}
+    }
+/* pc */
+@media (min-width:1024px){
+    main {width: 95%; margin: 0 auto;}
+    main .slide {width: 20%; height: 1000px; float: left;}
+    main .contents {width: 80%; height: 1000px; float: left;}
+    main .contents .con1{width: 100%; height: 500px;}
+    main .contents .con2{width: 100%; height: 500px;}
+    footer {clear:both;}
+ }
+ /* wide */
+@media (min-width:1280px){
+    main {width: 85%;}
+}    </style>
+</head>
+<body>
+    <!-- header+main+footer -->
+    <header></header>
+    <main> 
+        <!-- .slide+.con1+.con2 -->
+    <div class="slide"></div>
+    <div class="contents"> 
+        <div class="con1"></div>
+        <div class="con2"></div>
+    </div>   
+    </main>
+    <footer></footer> 
+</body>
+</html>
