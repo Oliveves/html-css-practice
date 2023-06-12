@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@import url(http://ts.daumcdn.net/custom/blog/0/606/skin/images/nanumgothic.css);
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font-family: 'Nanum Gothic';
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.fl {
+    float: left;
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+table {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+img,
+fieldset {
+    border: none;
+}
+
+address,
+caption,
+cite,
+code,
+em,
+strong,
+th {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:after,
+q:before {
+    content: "";
+}
+
+abbr,
+acronym {
+    border: none;
+}
+
+img,
+li,
+input,
+select {
+    vertical-align: middle;
+}
+
+hr {
+    display: none;
+}
+
+#skipNavi,
+.blind,
+.hidden {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+/* tabTable */
+.tabTable {
+    margin: 50px;
+}
+
+/* scrollbar style */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* tab */
+.tabTable .con {
+    position: relative;
+    margin: 10px;
+}
+
+/* 선택되지 않은 텝 */
+.tabTable .con h2 {
+    margin-top: 10px;
+    font-size: 12px;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background: linear-gradient(0deg, #d1d1d1, #e8e8e8);
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* 선택된 텝 */
+.tabTable .con h2.on {
+    background: linear-gradient(0deg, #0d50b4, #0b6eca);
+    color: #fff;
+}
+
+/* .project1~3 */
+.tabTable .con>div {
+    /* display: none; */
+    width: 700px;
+    height: 430px;
+    background-color: #fff;
+    padding-top: 15px;
+    border: 1px solid #142c8e;
+    border-top-right-radius: 7px;
+    position: absolute;
+    top: 35px;
+}
+
+.tabTable .con>div>.top {
+    width: 700px;
+    height: 40px;
+    box-shadow: 0 3px 5px #ddd;
+}
+
+
+.tabTable .con>div>.tb {
+    width: 700px; height: 380px; 
+    overflow: overlay; /* 세로스크롤 */
+    padding-bottom: 20px; box-sizing: border-box;
+}
+
+/* h2.on+div -> on이라는 클래스가 있는 h2의 동생 선택하여 보여줌 */
+.con h2.on+div {
+    display: block;
+    /* 보기 */
+}
+
+.con h2.tab {
+    margin-top: 10px;
+}
+
+.con .project2 {
+    padding-top: 15px;
+}
+
+select {
+    width: 190px;
+    height: 25px;
+    margin-left: 12px;
+    font-size: 12px;
+    border: 1px solid #999;
+    background-color: #e0e0e1;
+    color: #000;
+}
+
+/* 검색바 */
+.box {
+    width: 417px;
+    height: 25px;
+    background-color: #ddd;
+    margin-left: 12px;
+    border: 1px solid #999;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 3px;
+    background-color: #fff;
+    color: #999;
+    position: relative;
+}
+
+/* 검색버튼 */
+.search {
+    position: absolute;
+    right: 45px;
+    width: 23px;
+    height: 23px;
+}
+
+input::placeholder {
+    color: #c5c5c5;
+}
+
+/* table */
+table {
+    text-align: center;
+    margin: 30px auto 0 auto;
+    width: 673px;
+    font-size: 11px;
+    border-bottom: 1px solid #142c8e;
+}
+
+table a:hover {
+    color: #142c8e;
+    text-decoration: underline;
+}
+
+table th {
+    height: 30px;
+    border-top: 2px solid #142c8e;
+    font-weight: bold; 
+    border-bottom: 1px solid #cacaca;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+table td {height: 30px; 
+    border-bottom: 1px solid #cacaca;}
+table td:nth-child(2) {
+    font-weight: bold; color: #3b5fcf;
+}    

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>tabTable</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <!-- .tabTable>.con>h2.on.fl+.notice -->
+    <div class="tabTable">
+        <div class="con">
+            <!-- 개발 1팀 -->
+            <h2 class="on fl">개발1팀</h2>
+            <div class="pj project1">
+                <!-- .top+.tb -->
+                <div class="top">
+                    <!-- select>option{내용$}*3 -->
+                    <select>
+                        <option value="모바일사업팀">모바일사업팀</option>
+                        <option value="장비개발팀">장비개발팀</option>
+                        <option value="디자인검수팀">디자인검수팀</option>
+                    </select>
+                    <input type="search" placeholder="search" class="box" />
+                    <input type="image" src="./images/search.svg" alt="검색버튼" class="search" />
+                </div>
+
+
+                <div class="tb">
+                    <table summary="삼성SDS 개발팀 업체 이름, 아이디, 메일, 업체명, 부서명, 업체코드, 휴대폰, 회사전화, 주거래사업부로 구성되어있습니다.">
+                        <caption class="blind"> 삼성SDS 개발팀 관리 테이블 </caption>
+                       <!-- thead>tr>th*10  -->
+                       <thead>
+                        <!-- scope="col" : 해당 셀이 열(column)을 위한 헤더 셀임을 명시함. -->
+                        <tr>
+                            <th scope="col">이름</th>
+                            <th scope="col">아이디</th>
+                            <th scope="col">메일</th>
+                            <th scope="col">업체명</th>
+                            <th scope="col">부서명</th>
+                            <th scope="col">업체코드</th>
+                            <th scope="col">휴대폰</th>
+                            <th scope="col">회사전화</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">주거래사업부</th>                           
+                        </tr>
+                       </thead>
+                       <!-- tbody>tr>td -->
+                       <tbody>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>김춘식</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                       </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+            <!-- 개발 2팀 -->
+            <h2 class="tab fl">개발2팀</h2>
+            <div class="pj project2">
+                <!-- .top+.tb -->
+                 <div class="top">
+                    <!-- select>option{내용$}*3 -->
+                    <select>
+                        <option value="모바일사업팀">모바일사업팀</option>
+                        <option value="장비개발팀">장비개발팀</option>
+                        <option value="디자인검수팀">디자인검수팀</option>
+                    </select>
+                    <input type="search" placeholder="search" class="box" />
+                    <input type="image" src="./images/search.svg" alt="검색버튼" class="search" />
+                </div>
+                <div class="tb">
+                    <table summary="삼성SDS 개발팀 업체 이름, 아이디, 메일, 업체명, 부서명, 업체코드, 휴대폰, 회사전화, 주거래사업부로 구성되어있습니다.">
+                        <caption class="blind"> 삼성SDS 개발팀 관리 테이블 </caption>
+                       <!-- thead>tr>th*10  -->
+                       <thead>
+                        <!-- scope="col" : 해당 셀이 열(column)을 위한 헤더 셀임을 명시함. -->
+                        <tr>
+                            <th scope="col">이름</th>
+                            <th scope="col">아이디</th>
+                            <th scope="col">메일</th>
+                            <th scope="col">업체명</th>
+                            <th scope="col">부서명</th>
+                            <th scope="col">업체코드</th>
+                            <th scope="col">휴대폰</th>
+                            <th scope="col">회사전화</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">주거래사업부</th>                           
+                        </tr>
+                       </thead>
+                       <!-- tbody>tr>td -->
+                       <tbody>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>이삼성</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 개발 3팀 -->
+            <h2 class="tab fl">개발3팀</h2>
+            <div class="pj project3">
+                <!-- .top+.tb -->
+                <div class="top">
+                    <!-- select>option{내용$}*3 -->
+                    <select>
+                        <option value="모바일사업팀">모바일사업팀</option>
+                        <option value="장비개발팀">장비개발팀</option>
+                        <option value="디자인검수팀">디자인검수팀</option>
+                    </select>
+                    <input type="search" placeholder="search" class="box" />
+                    <input type="image" src="./images/search.svg" alt="검색버튼" class="search" />
+                </div>
+                <div class="tb">
+                    <table summary="삼성SDS 개발팀 업체 이름, 아이디, 메일, 업체명, 부서명, 업체코드, 휴대폰, 회사전화, 주거래사업부로 구성되어있습니다.">
+                        <caption class="blind"> 삼성SDS 개발팀 관리 테이블 </caption>
+                       <!-- thead>tr>th*10  -->
+                       <thead>
+                        <!-- scope="col" : 해당 셀이 열(column)을 위한 헤더 셀임을 명시함. -->
+                        <tr>
+                            <th scope="col">이름</th>
+                            <th scope="col">아이디</th>
+                            <th scope="col">메일</th>
+                            <th scope="col">업체명</th>
+                            <th scope="col">부서명</th>
+                            <th scope="col">업체코드</th>
+                            <th scope="col">휴대폰</th>
+                            <th scope="col">회사전화</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">주거래사업부</th>                           
+                        </tr>
+                       </thead>
+                       <!-- tbody>tr>td -->
+                       <tbody>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                        <tr>
+                            <td>나수정</td>
+                            <td>DSSF</td>
+                            <td><a href="mailto:csk@samsung.com">csk@samsung.com</a></td>
+                            <td>삼성SDS</td>
+                            <td>개발실</td>
+                            <td>1772</td>
+                            <td>010-1234-5678</td>
+                            <td>031-1234-5678</td>
+                            <td>전자</td>
+                            <td>설비</td>
+                        </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

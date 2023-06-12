@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/* reset */
+@charset "UTF-8";/* reset */
 :root { --text-color:#f0f4f5; } 
 /* :root - 최상위 엘리먼트, 변수를 할당하여 사용 */
 
