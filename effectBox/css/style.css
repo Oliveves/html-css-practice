@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+/* effectBox */
+figure.effect-01 {
+    position: relative;
+    width: 480px;
+    height: 360px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* 이미지 */
+figure.effect-01 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+figure.effect-01:hover img {
+    opacity: 1;
+}
+
+/* 텍스트 */
+figure.effect-01 figcaption {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1em;
+}
+
+figure.effect-01 figcaption>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figure.effect-01 figcaption>div h1 {
+    font-weight: 300;
+    transition: 0.2s;
+    padding-top: 26%;
+}
+
+figure.effect-01 figcaption>div h1 span {
+    font-weight: 800;
+}
+
+figure.effect-01 figcaption>div p {
+    font-size: 70%;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 0.5em 2em;
+}
+
+figure.effect-01 figcaption:hover p {
+    opacity: 1;
+}
+
+/* 텍스트 효과 */
+figure.effect-01 h1,
+figure.effect-01 p {
+    transform: translate3d(0, 30px, 0);
+}
+
+/* x, y, z */
+
+figure.effect-01:hover h1,
+figure.effect-01:hover p {
+    transform: translate3d(0, 0, 0);
+}
+
+/* 선 효과 */
+figure.effect-01 figcaption::before {
+    content:"";
+    position: absolute; 
+    bottom: 50px;
+    top: 50px;
+    right: 30px;
+    left: 30px;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    transform: scale(0.1); /* 10% */
+    transition: 0.3s;
+}
+figure.effect-01 figcaption::after {
+    content:"";
+    position: absolute; 
+    bottom: 30px;
+    top: 30px;
+    right: 50px;
+    left: 50px;
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+    transform: scale(0.1); /* 10% */
+    transition: 0.3s;
+}
+
+figure.effect-01:hover figcaption::before,
+figure.effect-01:hover figcaption::after {
+    transform: scale(1); /* 100% */
+}
